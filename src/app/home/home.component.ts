@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  click : string = '';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  firstClick() {
+    console.log('clicked');
+    this.click = 'clicked';
   }
 
 }
