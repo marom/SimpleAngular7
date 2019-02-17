@@ -8,18 +8,10 @@ import {DataService} from '../data.service';
 })
 export class HomeComponent implements OnInit {
 
-  click: string = '';
-  h1Style: boolean = false;
-
   constructor(private data: DataService) { }
 
   ngOnInit() {
   }
 
-  firstClick() {
-    this.data.serviceMethod();
-    this.click = 'clicked';
-    this.h1Style = true;
-  }
 
 }
